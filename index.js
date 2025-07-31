@@ -22,6 +22,7 @@ app.use(cookieParser());
 
 // routes
 app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/user", require("./routes/userRoutes"))
 
 app.get("/", async (req, res) => {
   res.send("server is running");
