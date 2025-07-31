@@ -24,7 +24,11 @@ app.use(cookieParser());
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/user", require("./routes/userRoutes"));
 app.use("/api/tasks", require("./routes//taskRoutes"));
-app.use('/api', require('./routes/taskRoutes'))
+app.use('/api', require('./routes/taskRoutes'));
+app.use("/api", require('./routes/taskRoutes'));
+
+
+
 app.get("/", async (req, res) => {
   res.send("server is running");
 });
